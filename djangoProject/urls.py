@@ -16,8 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     #le path include permet d'aller chercher l'url de views.py
-    path('', include('myapp.urls'))# le '' correspond à ce qui va suivre dans l'url (localhost/myapp)
+    path('', include('myapp.urls')),# le '' correspond à ce qui va suivre dans l'url (localhost/myapp)
 ]
