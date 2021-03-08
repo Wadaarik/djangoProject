@@ -1,472 +1,669 @@
 {% load static %}
-<!DOCTYPE HTML>
-<!--
-	Paradigm Shift by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html lang="fr">
-	<head>
-		<title>Paradigm Shift by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-				<!-- Intro -->
-					<section class="intro">
-						<header>
-							<h1>Paradigm Shift</h1>
-							<p>A free responsive site template designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> / <a href="https://html5up.net">HTML5 UP</a></p>
-							<ul class="actions">
-								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
-							</ul>
-						</header>
-						<div class="content">
-							<span class="image fill" data-position="center"><img src="../static/images/pic01.jpg" alt="" /></span>
-						</div>
-					</section>
+  <title>My Website Django</title>
 
-				<!-- Section -->
-					<section id="first">
-						<header>
-							<h2>Magna sed nullam nisl adipiscing</h2>
-						</header>
-						<div class="content">
-							<p><strong>Lorem ipsum dolor</strong> sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor amet fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies condimentum. Magna sed etiam consequat, et lorem adipiscing sed nulla. Volutpat nisl et tempus et dolor libero, feugiat magna tempus, sed et lorem adipiscing.</p>
-							<span class="image main"><img src="../static/images/pic02.jpg" alt="" /></span>
-						</div>
-					</section>
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 
-				<!-- Section -->
-					<section>
-						<header>
-							<h2>Feugiat consequat tempus ultrices</h2>
-						</header>
-						<div class="content">
-							<p><strong>Etiam tristique libero</strong> eu nibh porttitor amet fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies condimentum.</p>
-							<ul class="feature-icons">
-								<li class="icon solid fa-laptop">Consequat tempus</li>
-								<li class="icon solid fa-bolt">Etiam adipiscing</li>
-								<li class="icon solid fa-signal">Libero nullam</li>
-								<li class="icon solid fa-cog">Blandit condimentum</li>
-								<li class="icon solid fa-map-marker-alt">Lorem ipsum dolor</li>
-								<li class="icon solid fa-code">Nibh amet venenatis</li>
-							</ul>
-							<p>Vehicula ultrices sed ultricies condimentum. Magna sed etiam consequat, et lorem adipiscing sed nulla. Volutpat nisl et tempus et dolor libero, feugiat magna tempus, sed et lorem adipiscing.</p>
-						</div>
-					</section>
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
 
-				<!-- Section -->
-					<section>
-						<header>
-							<h2>Ultrices erat magna sed condimentum</h2>
-						</header>
-						<div class="content">
-							<p><strong>Integer mollis egestas</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+</head>
 
-							<!-- Section -->
-								<section>
-									<header>
-										<h3>Erat aliquam</h3>
-										<p>Vehicula ultrices dolor amet ultricies et condimentum. Magna sed etiam consequat, et lorem adipiscing sed dolor sit amet, consectetur amet do eiusmod tempor incididunt  ipsum suspendisse ultrices gravida.</p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="../static/images/gallery/fulls/01.jpg" class="landscape"><img src="../static/images/gallery/thumbs/01.jpg" alt="" /></a>
-											<a href="../static/images/gallery/fulls/02.jpg"><img src="../static/images/gallery/thumbs/02.jpg" alt="" /></a>
-											<a href="../static/images/gallery/fulls/03.jpg"><img src="../static/images/gallery/thumbs/03.jpg" alt="" /></a>
-											<a href="../static/images/gallery/fulls/04.jpg" class="landscape"><img src="../static/images/gallery/thumbs/04.jpg" alt="" /></a>
-										</div>
-									</div>
-								</section>
+<body>
 
-							<!-- Section -->
-								<section>
-									<header>
-										<h3>Nisl consequat</h3>
-										<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam sed facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet mauris. Ut magna finibus nisi nec lacinia ipsum maximus.</p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="../static/images/gallery/fulls/05.jpg" class="landscape"><img src="../static/images/gallery/thumbs/05.jpg" alt="" /></a>
-											<a href="../static/images/gallery/fulls/06.jpg"><img src="../static/images/gallery/thumbs/06.jpg" alt="" /></a>
-											<a href="../static/images/gallery/fulls/07.jpg"><img src="../static/images/gallery/thumbs/07.jpg" alt="" /></a>
-										</div>
-									</div>
-								</section>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="{% static 'images/logo.png' %}" alt="">
+            <span>
+              Lodge
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-							<!-- Section -->
-								<section>
-									<header>
-										<h3>Lorem gravida</h3>
-										<p>Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aenean ornare velit lacus, ac varius sed enim lorem ullamcorper dolore.  ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis.</p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="../static/images/gallery/fulls/08.jpg" class="portrait"><img src="../static/images/gallery/thumbs/08.jpg" alt="" /></a>
-											<a href="../static/images/gallery/fulls/09.jpg" class="portrait"><img src="../static/images/gallery/thumbs/09.jpg" alt="" /></a>
-											<a href="../static/images/gallery/fulls/10.jpg" class="landscape"><img src="../static/images/gallery/thumbs/10.jpg" alt="" /></a>
-										</div>
-									</div>
-								</section>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="jewellery.html">Jewellery </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Login</a>
+                </li>
+              </ul>
 
-						</div>
-					</section>
+            </div>
+            <div class="quote_btn-container ">
+              <a href="">
+                <img src="{% static 'images/cart.png' %}" alt="">
+                <div class="cart_number">
+                  0
+                </div>
+              </a>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div class="design-box">
+        <img src="{% static 'images/design-1.png' %}" alt="">
+      </div>
+      <div class="slider_number-container d-none d-md-block">
+        <div class="number-box">
+          <span>
+            01
+          </span>
+          <hr>
+          <span class="jwel">
+            J <br>
+            e <br>
+            w <br>
+            e <br>
+            l <br>
+            l <br>
+            e <br>
+            r <br>
+            y
+          </span>
+          <hr>
+          <span>
+            02
+          </span>
+        </div>
+      </div>
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2">03</li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail_box">
+                    <h2>
+                      <span> New Collection</span>
+                      <hr>
+                    </h2>
+                    <h1>
+                      Jewellery
+                    </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felislacinia
+                      aptent taciti sociosqu ad litora torquent per conubia nostra
+                    </p>
+                    <div>
+                      <a href="">Shop Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="{% static 'images/slider-img.png'%}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail_box">
+                    <h2>
+                      <span> New Collection</span>
+                      <hr>
+                    </h2>
+                    <h1>
+                      Jewellery
+                    </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felislacinia
+                      aptent taciti sociosqu ad litora torquent per conubia nostra
+                    </p>
+                    <div>
+                      <a href="">Shop Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="{% static 'images/slider-img.png'%}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail_box">
+                    <h2>
+                      <span> New Collection</span>
+                      <hr>
+                    </h2>
+                    <h1>
+                      Jewellery
+                    </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felislacinia
+                      aptent taciti sociosqu ad litora torquent per conubia nostra
+                    </p>
+                    <div>
+                      <a href="">Shop Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="{% static 'images/slider-img.png'%}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-				<!-- Section -->
-					<section>
-						<header>
-							<h2>Duis sed adpiscing veroeros amet</h2>
-						</header>
-						<div class="content">
-							<p><strong>Proin tempus feugiat</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>
-							<ul class="actions">
-								<li><a href="#" class="button primary large">Get Started</a></li>
-								<li><a href="#" class="button large">Learn More</a></li>
-							</ul>
-						</div>
-					</section>
+    </section>
+    <!-- end slider section -->
+  </div>
 
-				<!-- Elements -->
-				<!--
-					<section>
-						<header>
-							<h2>Elements</h2>
-						</header>
-						<div class="content">
+  <!-- item section -->
 
-							<section>
-								<header>
-									<h3>Text</h3>
-								</header>
-								<div class="content">
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<hr />
-									<h5>Blockquote</h5>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h5>Preformatted</h5>
-									<pre><code>i = 0;
+  <div class="item_section layout_padding2">
+    <div class="container">
+      <div class="item_container">
+        <div class="box">
+          <div class="price">
+            <h6>
+              Best PRICE
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="{% static 'images/i-1.png'%}" alt="">
+          </div>
+          <div class="name">
+            <h5>
+              Bracelet
+            </h5>
+          </div>
+        </div>
+        <div class="box">
+          <div class="price">
+            <h6>
+              Best PRICE
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="{% static 'images/i-2.png'%}" alt="">
+          </div>
+          <div class="name">
+            <h5>
+              Ring
+            </h5>
+          </div>
+        </div>
+        <div class="box">
+          <div class="price">
+            <h6>
+              Best PRICE
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="{% static 'images/i-3.png'%}" alt="">
+          </div>
+          <div class="name">
+            <h5>
+              Earings
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-while (!deck.isInOrder()) {
-  print 'Iteration ' + i;
-  deck.shuffle();
-  i++;
-}
+  <!-- end item section -->
 
-print 'Sorted in ' + i + ' iterations.';</code></pre>
-								</div>
-							</section>
+  <!-- about section -->
 
-							<section>
-								<header>
-									<h3>Lists</h3>
-								</header>
-								<div class="content">
+  <section class="about_section layout_padding2-top layout_padding-bottom">
+    <div class="design-box">
+      <img src="{% static 'images/design-2.png'%}" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About Jewellery Shop
+              </h2>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud
+            </p>
+            <div>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="{% static 'images/about-img.png'%}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+  <!-- end about section -->
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+  <!-- price section -->
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
+  <section class="price_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Our Jewellery Price
+        </h2>
+      </div>
+      <div class="price_container">
+        <div class="box">
+          <div class="name">
+            <h6>
+              Diamond Ring
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="{% static 'images/p-1.png'%}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              $<span>1000.00</span>
+            </h5>
+            <a href="">
+              Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="name">
+            <h6>
+              Diamond Ring
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="{% static 'images/i-2.png'%}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              $<span>1000.00</span>
+            </h5>
+            <a href="">
+              Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="name">
+            <h6>
+              Diamond Ring
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="{% static 'images/i-3.png'%}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              $<span>1000.00</span>
+            </h5>
+            <a href="">
+              Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <a href="" class="price_btn">
+          See More
+        </a>
+      </div>
+    </div>
+  </section>
 
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-							</section>
+  <!-- end price section -->
 
-							<section>
-								<header>
-									<h3>Table</h3>
-								</header>
-								<div class="content">
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
+  <!-- ring section -->
 
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</div>
-							</section>
+  <section class="ring_section layout_padding">
+    <div class="design-box">
+      <img src="{% static 'images/design-1.png'%}" alt="">
+    </div>
+    <div class="container">
+      <div class="ring_container layout_padding2">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="detail-box">
+              <h4>
+                special
+              </h4>
+              <h2>
+                Wedding Ring
+              </h2>
+              <a href="">
+                Buy Now
+              </a>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="img-box">
+              <img src="{% static 'images/ring-img.jpg'%}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-							<section>
-								<header>
-									<h3>Buttons</h3>
-								</header>
-								<div class="content">
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button large">Large</a></li>
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</div>
-							</section>
+  <!-- end ring section -->
 
-							<section>
-								<header>
-									<h3>Form</h3>
-								</header>
-								<div class="content">
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</div>
-							</section>
+  <!-- client section -->
 
-						</div>
-					</section>
-				-->
+  <section class="client_section">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Testimonial
+        </h2>
+      </div>
+      <h4 class="secondary_heading">
+        What is says our customer
+      </h4>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="client_container">
+              <div class="client-id">
+                <div class="img-box">
+                  <img src="{% static 'images/client.png'%}" alt="">
+                </div>
+                <div class="name">
+                  <h5>
+                    Aliqua
+                  </h5>
+                  <h6>
+                    Consectetur adipiscing
+                  </h6>
+                </div>
+              </div>
+              <div class="detail-box">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_container">
+              <div class="client-id">
+                <div class="img-box">
+                  <img src="{% static 'images/client.png'%}" alt="">
+                </div>
+                <div class="name">
+                  <h5>
+                    Aliqua
+                  </h5>
+                  <h6>
+                    Consectetur adipiscing
+                  </h6>
+                </div>
+              </div>
+              <div class="detail-box">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_container">
+              <div class="client-id">
+                <div class="img-box">
+                  <img src="{% static 'images/client.png'%}" alt="">
+                </div>
+                <div class="name">
+                  <h5>
+                    Aliqua
+                  </h5>
+                  <h6>
+                    Consectetur adipiscing
+                  </h6>
+                </div>
+              </div>
+              <div class="detail-box">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 
-				<!-- Section -->
-					<section>
-						<header>
-							<h2>Get in touch</h2>
-						</header>
-						<div class="content">
-							<p><strong>Auctor commodo</strong> interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>
-							<form>
-								<div class="fields">
-									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="button primary" /></li>
-								</ul>
-							</form>
-						</div>
-						<footer>
-							<ul class="items">
-								<li>
-									<h3>Email</h3>
-									<a href="#">information@untitled.ext</a>
-								</li>
-								<li>
-									<h3>Phone</h3>
-									<a href="#">(000) 000-0000</a>
-								</li>
-								<li>
-									<h3>Address</h3>
-									<span>1234 Somewhere Road, Nashville, TN 00000</span>
-								</li>
-								<li>
-									<h3>Elsewhere</h3>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="#" class="icon brands fa-codepen"><span class="label">Codepen</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</footer>
-					</section>
+    </div>
+  </section>
 
-				<!-- Copyright -->
-					<div class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+  <!-- end client section -->
 
-			</div>
+  <!-- contact section -->
 
-		<!-- Scripts -->
-			<script src="../static/js/jquery.min.js"></script>
-			<script src="../static/js/jquery.scrolly.min.js"></script>
-			<script src="../static/js/browser.min.js"></script>
-			<script src="../static/js/breakpoints.min.js"></script>
-			<script src="../static/js/util.js"></script>
-			<script src="../static/js/main.js"></script>
+  <section class="contact_section layout_padding">
+    <div class="design-box">
+      <img src="{% static 'images/design-2.png'%}" alt="">
+    </div>
+    <div class="container ">
+      <div class="">
+        <h2 class="">
+          Contact Us
+        </h2>
+      </div>
 
-	</body>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form action="">
+            <div>
+              <input type="text" placeholder="Name" />
+            </div>
+            <div>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div>
+              <input type="text" placeholder="Phone" />
+            </div>
+            <div>
+              <input type="text" class="message-box" placeholder="Message" />
+            </div>
+            <div class="d-flex ">
+              <button>
+                SEND
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div class="map_container">
+            <div class="map-responsive">
+              <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="info_container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="info_logo">
+              <a href="">
+                <img src="{% static 'images/logo.png'%}" alt="">
+                <span>
+                  Lodge
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="info_contact">
+              <a href="">
+                <img src="{% static 'images/location.png'%}" alt="">
+                <span>
+                  Address
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="info_contact">
+              <a href="">
+                <img src="{% static 'images/phone.png'%}" alt="">
+                <span>
+                  +01 1234567890
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="info_contact">
+              <a href="">
+                <img src="{% static 'images/mail.png'%}" alt="">
+                <span>
+                  demo@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="info_form">
+          <div class="d-flex justify-content-center">
+            <h5 class="info_heading">
+              Newsletter
+            </h5>
+          </div>
+          <form action="">
+            <div class="email_box">
+              <label for="email2">Enter Your Email</label>
+              <input type="text" id="email2">
+            </div>
+            <div>
+              <button>
+                subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="info_social">
+          <div class="d-flex justify-content-center">
+            <h5 class="info_heading">
+              Follow Us
+            </h5>
+          </div>
+          <div class="social_box">
+            <a href="">
+              <img src="{% static 'images/fb.png'%}" alt="">
+            </a>
+            <a href="">
+              <img src="{% static 'images/twitter.png'%}" alt="">
+            </a>
+            <a href="">
+              <img src="{% static 'images/linkedin.png'%}" alt="">
+            </a>
+            <a href="">
+              <img src="{% static 'images/insta.png'%}" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; <span id="displayYear"></span> All Rights Reserved By
+      <a href="https://html.design/">Free Html Templates</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js'%}"></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap.js'%}"></script>
+  <script type="text/javascript" src="{% static 'js/custom.js'%}"></script>
+</body>
+
 </html>
