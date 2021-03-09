@@ -85,8 +85,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',#on utilise l'adaptateur postresql
         'NAME': 'dbdjango', #le nom de notre bdd cree precedement
-        'USER': 'postgres', #attention : remplacer par votre nom d'utilisateur
-        'PASSWORD': 'Enathem27exe',
+        'USER': 'leo', #attention : remplacer par votre nom d'utilisateur
+        'PASSWORD': 'root',
         'PORT': '5432',
     }
 }
