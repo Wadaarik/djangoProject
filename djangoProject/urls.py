@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #le path include permet d'aller chercher l'url de views.py
     path('', include('myapp.urls')),# le '' correspond à ce qui va suivre dans l'url (localhost/myapp)
+    path('', include('blog.urls')),
 ]
