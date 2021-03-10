@@ -682,8 +682,7 @@ a:focus {
   form {
     padding-right: 35px;
   }
-
-  input {
+  input, textarea {
     width: 100%;
     border: none;
     height: 50px;
@@ -703,6 +702,9 @@ a:focus {
     &.message-box {
       height: 120px;
     }
+  }
+  textarea{
+    height: 200px !important;
   }
 
   button {

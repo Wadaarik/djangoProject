@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.template.loader import get_template
 from django.core.mail import EmailMessage
 from .forms import ContactForm
+from .models import Contact
 
 
 # Create your views here.
@@ -26,6 +27,9 @@ def contact(request):
             contact_name = request.POST.get('contact_name', '')
             contact_email = request.POST.get('contact_email', '')
             form_content = request.POST.get('content', '')
+
+            c = Contact(nom=contact_name, mail=contact_email, titre=contact_subject, contenu=form_content)
+            c.save()
 
             # Email the profile with the
             # contact information
