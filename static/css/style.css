@@ -41,12 +41,12 @@ body {
   height: 30px;
   top: 14%;
   right: -15px;
-  background: linear-gradient(to right, #fb930a, #f5e47b);
+  background: linear-gradient(to right, #1C447E, #46A9EB);
 }
 
 /*header section*/
 .hero_area {
-  height: 100vh;
+  height: auto;
   position: relative;
   background-image: url(../images/hero-bg.png);
   background-size: cover;
@@ -282,7 +282,7 @@ a:focus {
   width: 125px;
 }
 .item_section .item_container .box h6 {
-  color: #fbb534;
+  color: #3c90c8;
   text-transform: uppercase;
 }
 .item_section .item_container .box h5 {
@@ -373,7 +373,7 @@ a:focus {
   font-size: 22px;
 }
 .price_section .price_container .box .detail-box h5 span {
-  color: #fbb534;
+  color: #3c90c8;
 }
 .price_section .price_container .box .detail-box a {
   display: inline-block;
@@ -384,8 +384,8 @@ a:focus {
   margin-top: 15px;
 }
 .price_section .price_container .box:hover a {
-  border-color: #fbb534;
-  color: #fbb534;
+  border-color: #3c90c8;
+  color: #3c90c8;
 }
 .price_section .price_btn {
   display: inline-block;
@@ -424,7 +424,7 @@ a:focus {
 }
 .ring_section .ring_container .detail-box h4 {
   text-transform: uppercase;
-  color: #fbb534;
+  color: #3c90c8;
 }
 .ring_section .ring_container .detail-box a {
   display: inline-block;
@@ -447,7 +447,7 @@ a:focus {
 .client_section .client_container {
   display: flex;
   align-items: center;
-  border: 1px solid #fbb534;
+  border: 1px solid #3c90c8;
   padding: 25px;
   width: 85%;
   margin: 75px auto;
@@ -551,7 +551,7 @@ a:focus {
   border: none;
   border-radius: 30px;
   color: #fff;
-  background: linear-gradient(to bottom, #f5e47b, #fb930a);
+  background: linear-gradient(to bottom, #1C447E, #46A9EB);
   margin-top: 35px;
 }
 .contact_section .map_container {
@@ -611,7 +611,7 @@ a:focus {
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
-  background-color: #f8bf46;
+  background-color: #46A9EB;
 }
 .info_section .info_form form {
   display: flex;
@@ -638,7 +638,7 @@ a:focus {
   border: none;
   border-radius: 30px;
   color: #fff;
-  background: linear-gradient(to bottom, #f5e47b, #fb930a);
+  background: linear-gradient(to bottom, #1C447E, #46A9EB);
   margin-top: 35px;
   text-transform: uppercase;
 }
