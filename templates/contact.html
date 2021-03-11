@@ -102,29 +102,25 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-            {% block content %}
-          <form method="post">
-              {% csrf_token %}<!--Protection contre le « Cross site request forgery » -->
-              {{ form.as_p }}
-            <!--<div>
-              <input type="text" name="form-lastname" placeholder="Nom" />
+          <form action="">
+            <div>
+              <input type="text" placeholder="Name" />
             </div>
             <div>
-              <input type="text" name="form-firstname" placeholder="Prénom" />
+              <input type="email" placeholder="Email" />
             </div>
             <div>
-              <input type="email" name="form-email" placeholder="Email" />
+              <input type="text" placeholder="Phone" />
             </div>
             <div>
-              <input type="text" class="message-box" name="form-message" placeholder="Message" />
-            </div>-->
+              <input type="text" class="message-box" placeholder="Message" />
+            </div>
             <div class="d-flex ">
               <button>
-                Envoyer
+                SEND
               </button>
             </div>
           </form>
-            {% endblock %}
         </div>
         <div class="col-md-6">
           <div class="map_container">
