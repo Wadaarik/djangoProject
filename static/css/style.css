@@ -294,6 +294,7 @@ a:focus {
 
 .about_section {
   position: relative;
+  background: url("../images/about-background.jpg") no-repeat center;
 }
 .about_section .design-box {
   position: absolute;
